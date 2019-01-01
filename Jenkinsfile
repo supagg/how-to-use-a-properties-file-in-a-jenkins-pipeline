@@ -10,7 +10,7 @@ pipeline {
                     configProperties = readProperties file: './config.properties'
 
                     //Get variables
-                    PROJECT_AUTHOR = configProperties['DEPLOY_TO_AZURE']
+                    PROJECT_AUTHOR = configProperties['PROJECT_AUTHOR']
                     PROJECT_BLOG = configProperties['PROJECT_BLOG']
                 }
 
