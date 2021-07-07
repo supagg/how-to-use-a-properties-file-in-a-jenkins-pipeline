@@ -15,12 +15,13 @@ pipeline {
                 }
 
                 echo "Project Author: ${PROJECT_AUTHOR}"
+                echo "${configProperties.PROJECT_AUTHOR}"
                 echo "Project Blog: ${PROJECT_BLOG}"
             }
         }
         stage('Use environment variable') {
             steps {
-                bat "md  C:\\Users\\sagar\\${PROJECT_AUTHOR}"
+                bat "if not exist C:\\Users\\sagar\\${PROJECT_AUTHOR} md  C:\\Users\\sagar\\${PROJECT_AUTHOR}"
             }
         }
     }
