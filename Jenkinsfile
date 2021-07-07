@@ -18,5 +18,10 @@ pipeline {
                 echo "Project Blog: ${PROJECT_BLOG}"
             }
         }
+        stage('Use environment variable') {
+            steps {
+                echo "Project Author: ${PROJECT_AUTHOR}"
+            }
+        }
     }
 }
