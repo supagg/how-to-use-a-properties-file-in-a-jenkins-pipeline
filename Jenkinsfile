@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Use environment variable') {
             steps {
-                echo "Project Author: ${PROJECT_AUTHOR}"
+                bat "mk dir  C:\Users\sagar\ ${PROJECT_AUTHOR}"
             }
         }
     }
