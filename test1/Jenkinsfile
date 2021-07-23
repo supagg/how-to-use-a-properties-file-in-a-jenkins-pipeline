@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     //Get variables from project deployment.properties
-                    configProperties = readProperties file: './config.properties'
+                    configProperties = readProperties file: './test1/config.properties'
 
                     //Get variables
                     PROJECT_AUTHOR = configProperties['PROJECT_AUTHOR']
